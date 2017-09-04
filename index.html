@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>俄罗斯方块</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body style="overflow-x: hidden">
+<div class="help">请用方向键和空格键进行操作：⬆️：旋转，⬇️：向下，⬅️：向左，➡️：向右，空格键：坠落</div>
+<div class="local">
+    <p>朕的游戏区</p>
+    <div class="main"></div>
+    <div class="next"></div>
+    <div class="info">
+        <div class="time">已用时 <span>0</span>s</div>
+        <div class="score">已得分 <span>0</span>分</div>
+        <div class="result"></div>
+    </div>
+</div>
+<div class="_remote">
+    <p>二狗的游戏区</p>
+    <div class="main remote_main"></div>
+    <div class="next remote_next"></div>
+    <div class="info remote_info">
+        <div class="time remote_time">已用时 <span>0</span>s</div>
+        <div class="score remote_score">已得分 <span>0</span>分</div>
+        <div class="result remote_result"></div>
+        <button id="down">down</button>
+        <button id="left">left</button>
+        <button id="right">right</button>
+        <button id="rotate">rotate</button>
+        <button id="fall">fall</button>
+        <button id="fixed">fixed</button>
+        <button id="performNext">performNext</button>
+        <button id="checkClear">checkClear</button>
+        <button id="checkGameOver">checkGameOver</button>
+        <button id="setTime">setTime</button>
+        <button id="addScore">addScore</button>
+        <button id="result">result</button>
+        <button id="addTailLine">addTailLine</button>
+    </div>
+</div>
+
+</body>
+<script src="js/square.js"></script>
+<script src="js/square-factory.js"></script>
+<script src="js/game.js"></script>
+<script src="js/local.js"></script>
+<script src="js/remote.js"></script>
+<script src="js/index.js"></script>
+</html>
